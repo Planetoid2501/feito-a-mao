@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Feito à Mão: peças artesanais para presentear e transformar seu espaço.">
+  <title>Feito à Mão | Artesanato com significado</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script src="assets/js/analytics.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <div class="announcement">Peças únicas, feitas com cuidado — conheça nossa coleção</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Feito à Mão - início">
+      <span class="brand-mark">fm</span>
+      <span>feito à mão<small>ARTE • CUIDADO • ORIGINALIDADE</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#produtos">Produtos</a>
+      <a href="#historia">Nossa história</a>
+      <a href="#novidades">Novidades</a>
+    </nav>
+    <button class="cart-button" id="open-cart" aria-label="Abrir carrinho">Sacola <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">FEITO POR PESSOAS, NÃO POR MÁQUINAS</p>
+        <h1>Pequenos detalhes.<br><em>Grandes histórias.</em></h1>
+        <p>Peças artesanais que trazem personalidade para sua casa e significado para seus presentes.</p>
+        <a class="button button-dark" href="#produtos" data-track="hero_shop_click">Explore a coleção <span>↗</span></a>
+        <div class="hero-note"><span class="dot"></span> Cada peça tem seu próprio jeito de ser.</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Peças artesanais em tons naturais">
+        <div class="image-label">Coleção<br><strong>Essências</strong></div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Categorias">
+      <span>✳ Cerâmica</span><span>✳ Decoração</span><span>✳ Velas artesanais</span><span>✳ Presentes especiais</span>
+    </section>
+
+    <section class="section products-section" id="produtos">
+      <div class="section-heading">
+        <div><p class="eyebrow">ESCOLHIDOS COM CARINHO</p><h2>Encontre sua peça</h2></div>
+        <p>Objetos com personalidade para acompanhar o seu dia a dia.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar produtos">
+        <button class="filter active" data-category="todos">Todos</button>
+        <button class="filter" data-category="ceramica">Cerâmica</button>
+        <button class="filter" data-category="decoracao">Decoração</button>
+        <button class="filter" data-category="velas">Velas</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="story-section" id="historia">
+      <div class="story-image" role="img" aria-label="Materiais e ferramentas de artesanato"></div>
+      <div class="story-copy">
+        <p class="eyebrow">MAIS DO QUE UM OBJETO</p>
+        <h2>Feito devagar.<br><em>Feito para ficar.</em></h2>
+        <p>Acreditamos que os objetos que escolhemos para viver conosco podem carregar histórias, apoiar pequenos produtores e tornar a rotina mais especial.</p>
+        <p>O Feito à Mão é uma loja demonstrativa criada para valorizar a criatividade de artesãos independentes.</p>
+        <a href="#novidades" class="text-link" data-track="story_newsletter_click">Acompanhe nossas novidades ↗</a>
+      </div>
+    </section>
+
+    <section class="promo-section">
+      <div><p class="eyebrow">UM PRESENTE COM INTENÇÃO</p><h2>Encontre algo que<br>pareça feito para alguém.</h2></div>
+      <a class="button button-light" href="#produtos" data-track="promo_shop_click">Ver produtos <span>↗</span></a>
+    </section>
+
+    <section class="newsletter-section" id="novidades">
+      <div><p class="eyebrow">CARTAS DO ATELIÊ</p><h2>Novidades feitas<br><em>com calma.</em></h2></div>
+      <form id="newsletter-form" class="newsletter-form">
+        <label for="email">Receba novidades e ofertas da nossa coleção.</label>
+        <div class="email-row"><input id="email" name="email" type="email" placeholder="Seu melhor e-mail" required><button class="button button-dark" type="submit">Quero receber ↗</button></div>
+        <small>Projeto acadêmico demonstrativo. Este formulário não envia nem armazena seu e-mail.</small>
+        <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">fm</span><span>feito à mão<small>ARTE • CUIDADO • ORIGINALIDADE</small></span></a>
+    <p>Peças com história. Uma loja demonstrativa para fins acadêmicos.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> Feito à Mão</span><a href="#inicio">Voltar ao topo ↑</a></div>
+  </footer>
+
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras" aria-hidden="true">
+    <div class="cart-heading"><div><p class="eyebrow">SUA SELEÇÃO</p><h2>Sacola</h2></div><button id="close-cart" class="close-button" aria-label="Fechar carrinho">×</button></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-bottom"><div class="cart-total"><span>Total estimado</span><strong id="cart-total">R$ 0,00</strong></div><button id="checkout-button" class="button button-dark full-width">Finalizar pedido de teste ↗</button><p class="fine-print">Sem pagamento real. Esta é uma demonstração acadêmica.</p><p id="checkout-message" class="form-message" aria-live="polite"></p></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
