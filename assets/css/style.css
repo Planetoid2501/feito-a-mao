@@ -40,7 +40,7 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
 .button-light { background: var(--paper); color: var(--ink); }
 .hero-note { margin-top: 30px; color: var(--muted); font-size: .76rem; }
 .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--clay); margin-right: 8px; }
-.hero-image { position: relative; min-height: 450px; background: linear-gradient(0deg, #2928201c, #29282005), url("https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1400&q=85") center/cover; }
+.hero-image { position: relative; min-height: 450px; background: linear-gradient(0deg, #2928201c, #29282005), url("../img/cesto.webp") center/cover; }
 .image-label { position: absolute; bottom: 32px; right: 32px; padding: 18px 25px; background: var(--paper); font-family: var(--serif); font-size: .9rem; }
 .image-label strong { font-size: 1.5rem; font-weight: 400; }
 .category-strip { display: flex; justify-content: space-around; gap: 20px; flex-wrap: wrap; padding: 22px 6%; border-bottom: 1px solid var(--line); font-family: var(--serif); color: var(--green); }
@@ -64,7 +64,7 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
 .add-button { background: transparent; border: 1px solid var(--green); color: var(--green); padding: 8px 10px; font-size: .72rem; }
 .add-button:hover { background: var(--green); color: white; }
 .story-section { display: grid; grid-template-columns: 1fr 1fr; background: var(--cream); }
-.story-image { min-height: 440px; background: url("https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=1200&q=85") center/cover; }
+.story-image { min-height: 440px; background: url("../img/vaso.webp") center/cover; }
 .story-copy { padding: 70px 12%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .story-copy p:not(.eyebrow) { color: var(--muted); max-width: 450px; font-size: .9rem; }
 .text-link { color: var(--green); border-bottom: 1px solid var(--clay); padding-bottom: 5px; margin-top: 12px; font-size: .85rem; }
@@ -139,3 +139,18 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   .footer-bottom { gap: 20px; }
   .cart-drawer { padding: 22px; }
 }
+
+/* Coleção Amazônia: assets locais, sem dependência de imagens externas. */
+:root{--green:#24483c;--clay:#975034;--muted:#625e53}
+.hero-image{background: url("../img/cesto.webp") center 48%/cover}.story-image{background: url("../img/vaso.webp") center/cover}
+.image-label{max-width:70%}.search-label{display:block;font-size:.85rem}#search{width:100%;max-width:480px;padding:14px;border:1px solid var(--line);background:var(--cream)}#result-count{font-size:.8rem;color:var(--muted)}
+.detail-link{border:0;border-bottom:1px solid var(--clay);padding:6px 0;background:transparent;color:var(--green);font-size:.8rem}
+.knowledge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:35px}.knowledge-grid h3{font:1.5rem var(--serif)}.knowledge-grid p{color:var(--muted)}.policies{background:var(--cream)}details{border-bottom:1px solid #cec5b6;padding:20px 0}summary{cursor:pointer;font-weight:bold}details p{max-width:850px}details a,.cookie-banner a{text-decoration:underline}
+dialog{border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:30px;width:min(620px,calc(100% - 24px));max-height:90dvh;overflow:auto}dialog::backdrop{background:#152b24aa}.dialog-close{display:block;margin-left:auto}dialog h2{font-size:2rem}dialog label{display:block;margin:15px 0}dialog input,dialog select{display:block;width:100%;padding:12px;border:1px solid #b7b0a3;background:var(--cream);font:inherit}dialog form p{font-size:.85rem}.detail-image{width:100%;max-height:250px;object-fit:contain;background:var(--cream)}
+.cookie-banner{position:fixed;bottom:15px;left:3%;right:3%;z-index:40;background:var(--paper);border:1px solid var(--green);box-shadow:0 8px 50px #0002;padding:18px;display:flex;gap:15px;align-items:center}.cookie-banner p{flex:1;margin:0;font-size:.85rem}.cookie-banner button{flex-shrink:0}.cart-drawer{visibility:hidden}.cart-drawer.open{visibility:visible}.cart-bottom{max-height:50dvh;overflow:auto}#checkout-message{overflow-wrap:anywhere}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid var(--clay);outline-offset:4px}
+@media(max-width:700px){.knowledge-grid{grid-template-columns:1fr;gap:12px}.cookie-banner{flex-wrap:wrap}.cookie-banner p{flex-basis:100%}.site-header{gap:7px}.brand small{font-size:.42rem}.image-label{bottom:18px;right:18px}.section{padding:55px 7%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+button:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+.product-art img[src$="colar.webp"]{object-fit:contain;background:#d9bc7d}.hero-image{background-position:60% center}.detail-image{max-height:360px}

@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Feito à Mão: peças artesanais para presentear e transformar seu espaço.">
-  <title>Feito à Mão | Artesanato com significado</title>
+  <meta name="description" content="Feito à Mão Amazônia: cestaria, cerâmica e biojoias inspiradas nos materiais e nas cores da região amazônica.">
+  <title>Feito à Mão | Artesanato da Amazônia</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WTD3H3VLH"></script>
   <script src="assets/js/analytics.js"></script>
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  <div class="announcement">Peças únicas, feitas com cuidado — conheça nossa coleção</div>
+  <div class="announcement">Coleção Amazônia • 5% de desconto no Pix • Conheça nossas peças</div>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Feito à Mão - início">
       <span class="brand-mark">fm</span>
-      <span>feito à mão<small>ARTE • CUIDADO • ORIGINALIDADE</small></span>
+      <span>feito à mão<small>AMAZÔNIA • SABERES • AFETO</small></span>
     </a>
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <nav class="main-nav" id="main-nav">
       <a href="#produtos">Produtos</a>
       <a href="#historia">Nossa história</a>
-      <a href="#novidades">Novidades</a>
+      <a href="#saberes">Saberes</a><button class="filter" id="account-button">Minha conta</button>
     </nav>
     <button class="cart-button" id="open-cart" aria-label="Abrir carrinho">Sacola <span id="cart-count">0</span></button>
   </header>
@@ -29,42 +28,43 @@
   <main>
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <p class="eyebrow">FEITO POR PESSOAS, NÃO POR MÁQUINAS</p>
-        <h1>Pequenos detalhes.<br><em>Grandes histórias.</em></h1>
-        <p>Peças artesanais que trazem personalidade para sua casa e significado para seus presentes.</p>
+        <p class="eyebrow">DAS TRAMAS DA FLORESTA PARA SUA CASA</p>
+        <h1>Amazônia feita<br><em>à mão.</em></h1>
+        <p>Cestaria, cerâmica e biojoias: um encontro com materiais, cores e saberes que inspiram o artesanato amazônico.</p>
         <a class="button button-dark" href="#produtos" data-track="hero_shop_click">Explore a coleção <span>↗</span></a>
-        <div class="hero-note"><span class="dot"></span> Cada peça tem seu próprio jeito de ser.</div>
+        <div class="hero-note"><span class="dot"></span> Muitas tramas. Muitas formas de conhecer a Amazônia.</div>
       </div>
-      <div class="hero-image" role="img" aria-label="Peças artesanais em tons naturais">
-        <div class="image-label">Coleção<br><strong>Essências</strong></div>
+      <div class="hero-image" role="img" aria-label="Cerâmica e cestaria em tons da floresta">
+        <div class="image-label">Coleção<br><strong>Raízes da Amazônia</strong></div>
       </div>
     </section>
 
     <section class="category-strip" aria-label="Categorias">
-      <span>✳ Cerâmica</span><span>✳ Decoração</span><span>✳ Velas artesanais</span><span>✳ Presentes especiais</span>
+      <span>✳ Cestaria</span><span>✳ Cerâmica</span><span>✳ Biojoias</span><span>✳ Saberes amazônicos</span>
     </section>
 
     <section class="section products-section" id="produtos">
       <div class="section-heading">
         <div><p class="eyebrow">ESCOLHIDOS COM CARINHO</p><h2>Encontre sua peça</h2></div>
-        <p>Objetos com personalidade para acompanhar o seu dia a dia.</p>
+        <p>Conheça os materiais, os detalhes e os cuidados de cada criação.</p>
       </div>
       <div class="filters" role="group" aria-label="Filtrar produtos">
         <button class="filter active" data-category="todos">Todos</button>
         <button class="filter" data-category="ceramica">Cerâmica</button>
-        <button class="filter" data-category="decoracao">Decoração</button>
-        <button class="filter" data-category="velas">Velas</button>
+        <button class="filter" data-category="cestaria">Cestaria</button>
+        <button class="filter" data-category="biojoias">Biojoias</button>
       </div>
+      <label class="search-label" for="search">Buscar na coleção</label><input id="search" type="search" placeholder="Busque por peça ou material…"><p id="result-count" role="status"></p>
       <div class="product-grid" id="product-grid"></div>
     </section>
 
     <section class="story-section" id="historia">
-      <div class="story-image" role="img" aria-label="Materiais e ferramentas de artesanato"></div>
+      <div class="story-image" role="img" aria-label="Fotografia de cerâmica artesanal"></div>
       <div class="story-copy">
         <p class="eyebrow">MAIS DO QUE UM OBJETO</p>
-        <h2>Feito devagar.<br><em>Feito para ficar.</em></h2>
-        <p>Acreditamos que os objetos que escolhemos para viver conosco podem carregar histórias, apoiar pequenos produtores e tornar a rotina mais especial.</p>
-        <p>O Feito à Mão é uma loja demonstrativa criada para valorizar a criatividade de artesãos independentes.</p>
+        <h2>Território, memória.<br><em>Matéria e afeto.</em></h2>
+        <p>A Amazônia reúne diferentes povos, territórios e tradições. Nossa proposta é valorizar esse universo por meio de uma curadoria de objetos para vestir, presentear e habitar.</p>
+        <p>Cores de terra, formas orgânicas e texturas naturais se encontram em uma coleção inspirada na diversidade amazônica.</p>
         <a href="#novidades" class="text-link" data-track="story_newsletter_click">Acompanhe nossas novidades ↗</a>
       </div>
     </section>
@@ -77,26 +77,32 @@
     <section class="newsletter-section" id="novidades">
       <div><p class="eyebrow">CARTAS DO ATELIÊ</p><h2>Novidades feitas<br><em>com calma.</em></h2></div>
       <form id="newsletter-form" class="newsletter-form">
-        <label for="email">Receba novidades e ofertas da nossa coleção.</label>
-        <div class="email-row"><input id="email" name="email" type="email" placeholder="Seu melhor e-mail" required><button class="button button-dark" type="submit">Quero receber ↗</button></div>
-        <small>Projeto acadêmico demonstrativo. Este formulário não envia nem armazena seu e-mail.</small>
+        <label for="email">Quer acompanhar as próximas coleções?</label>
+        <div class="email-row"><button class="button button-dark" type="submit">Tenho interesse ↗</button></div>
+        <small>Seu interesse inspira nossas próximas coleções.</small>
         <p id="newsletter-message" class="form-message" aria-live="polite"></p>
       </form>
     </section>
+    <section class="section" id="saberes"><p class="eyebrow">CADERNO DE SABERES</p><h2>Conhecer também é valorizar.</h2><div class="knowledge-grid"><article><h3>Tramas que acolhem</h3><p>Fibras como o arumã inspiram cestos e acessórios. Para conservar peças de fibras vegetais, evite umidade e exposição prolongada ao sol.</p></article><article><h3>O tempo do barro</h3><p>A cerâmica aproxima forma, textura e trabalho manual. As peças decorativas desta coleção não são indicadas para alimentos.</p></article><article><h3>Sementes, novas formas</h3><p>Biojoias exploram texturas de sementes e fibras. Guarde em local seco e evite contato com perfumes. Conhecer a origem dos materiais também faz parte de valorizar uma peça.</p></article></div></section>
+    <section class="section policies" id="atendimento"><p class="eyebrow">PODE CHEGAR</p><h2>Atendimento e transparência</h2><details><summary>Como funciona a entrega?</summary><p>Consulte uma estimativa no checkout: CEPs iniciados em 6 têm frete de R$ 18 e prazo de 5 a 8 dias úteis; demais regiões, R$ 32 e 8 a 15 dias úteis. Valores e prazos são estimados.</p></details><details><summary>Trocas e devoluções</summary><p>Arrependimento em até 7 dias após o recebimento, com devolução sem custo. Para dúvidas sobre conservação, trocas ou problemas com uma peça, consulte nosso canal de atendimento.</p></details><details><summary>Ajuda e pós-venda</summary><p>Escolha uma peça, abra a sacola e revise sua seleção. O resumo fica disponível na tela e em Minha conta, neste navegador.</p><p>Fale com a gente: <a href="https://github.com/Planetoid2501/feito-a-mao/issues" target="_blank" rel="noopener">abrir uma dúvida no GitHub</a>. Não inclua dados pessoais em mensagens públicas.</p></details><details id="privacidade"><summary>Privacidade e cookies</summary><p>Feito à Mão Amazônia. Para dúvidas sobre esta página e seus dados, utilize o canal de atendimento indicado acima.</p><p>Sacola, preferência de cookies e último pedido ficam neste navegador. Seu apelido fica apenas durante a sessão. Analytics só é carregado após aceitação; recebe eventos de navegação e produtos, sem apelido, e-mail ou CEP nos parâmetros enviados pelo site. O Google pode tratar dados técnicos da visita. Recusar não impede usar a loja.</p><button id="privacy-settings" class="filter">Rever consentimento</button><button id="clear-data" class="filter">Apagar dados locais</button></details><details><summary>Pagamento e nota fiscal</summary><p>Nesta página, você pode revisar opções de Pix, cartão e carteira digital sem informar dados bancários. A finalização não realiza cobrança nem emite nota fiscal.</p></details></section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">fm</span><span>feito à mão<small>ARTE • CUIDADO • ORIGINALIDADE</small></span></a>
-    <p>Peças com história. Uma loja demonstrativa para fins acadêmicos.</p>
-    <div class="footer-bottom"><span>© <span id="year"></span> Feito à Mão</span><a href="#inicio">Voltar ao topo ↑</a></div>
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">fm</span><span>feito à mão<small>AMAZÔNIA • SABERES • AFETO</small></span></a>
+    <p>Tramas, formas e cores da Amazônia para o seu dia a dia.</p>
+    <p><a href="#atendimento">Atendimento e trocas</a> · <a href="#privacidade">Privacidade</a></p><p class="photo-credit">Fotografias: Márcia do Carmo / MTur · <a href="creditos.html">Créditos das imagens</a></p><div class="footer-bottom"><span>© <span id="year"></span> Feito à Mão</span><a href="#inicio">Voltar ao topo ↑</a></div>
   </footer>
 
   <div class="cart-overlay" id="cart-overlay" hidden></div>
-  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras" aria-hidden="true">
+  <aside inert role="dialog" aria-modal="true" class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras" aria-hidden="true">
     <div class="cart-heading"><div><p class="eyebrow">SUA SELEÇÃO</p><h2>Sacola</h2></div><button id="close-cart" class="close-button" aria-label="Fechar carrinho">×</button></div>
     <div id="cart-items" class="cart-items"></div>
-    <div class="cart-bottom"><div class="cart-total"><span>Total estimado</span><strong id="cart-total">R$ 0,00</strong></div><button id="checkout-button" class="button button-dark full-width">Finalizar pedido de teste ↗</button><p class="fine-print">Sem pagamento real. Esta é uma demonstração acadêmica.</p><p id="checkout-message" class="form-message" aria-live="polite"></p></div>
+    <div class="cart-bottom"><div class="cart-total"><span>Total estimado</span><strong id="cart-total">R$ 0,00</strong></div><button id="checkout-button" class="button button-dark full-width">Continuar para o checkout ↗</button><p class="fine-print">Revise suas peças e escolha como finalizar.</p><p id="checkout-message" class="form-message" aria-live="polite"></p></div>
   </aside>
+  <dialog id="detail-dialog"><button class="close-button dialog-close" aria-label="Fechar">×</button><div id="detail-content"></div></dialog>
+  <dialog id="account-dialog"><button class="close-button dialog-close" aria-label="Fechar">×</button><h2>Seu ateliê</h2><p>Escolha um apelido para personalizar sua visita neste navegador.</p><form id="account-form"><label>Como podemos chamar você?<input id="nickname" required maxlength="40" autocomplete="off"></label><button class="button button-dark">Continuar</button></form><p id="account-status" role="status"></p><button id="logout" class="filter">Sair</button><h3>Último pedido</h3><p id="last-order">Nenhum pedido neste navegador.</p></dialog>
+  <dialog id="checkout-dialog"><button class="close-button dialog-close" aria-label="Fechar">×</button><h2>Finalizar pedido</h2><p>Confira seu pedido. Nenhuma cobrança será realizada nesta finalização.</p><form id="checkout-form"><label>CEP de entrega<input id="cep" inputmode="numeric" pattern="[0-9]{5}-?[0-9]{3}" placeholder="69900-000" required></label><button type="button" id="confirm-shipping" class="button button-dark">Confirmar frete</button><p id="shipping-status" role="status"></p><label>Pagamento<select id="payment"><option value="pix">Pix • 5% de desconto</option><option value="card">Cartão de crédito</option><option value="wallet">Carteira digital</option></select></label><label>Cupom<input id="coupon" placeholder="AMAZONIA10" maxlength="20"></label><p>AMAZONIA10: 10% nos produtos. Descontos não cumulativos: vale o maior.</p><p id="order-summary" role="status"></p><button id="confirm-order" disabled class="button button-dark" type="submit">Confirmar seleção</button></form></dialog>
+  <section id="cookie-banner" class="cookie-banner" aria-label="Preferências de privacidade"><p>Podemos usar o Google Analytics para medir visitas e eventos? A sacola usa armazenamento local. <a href="#privacidade">Ver privacidade</a>.</p><button id="accept-cookies" class="button button-dark">Aceitar analytics</button><button id="reject-cookies" class="filter">Recusar</button></section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
