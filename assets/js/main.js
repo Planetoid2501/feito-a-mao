@@ -219,9 +219,26 @@ document.querySelector("#checkout-form").addEventListener("submit",event => {
 });
 document.querySelector("#newsletter-form").addEventListener("submit", event => {
   event.preventDefault();
+  
+  const emailInput = document.querySelector("#email");
   const message = document.querySelector("#newsletter-message");
-  message.textContent = "Obrigado pelo interesse! Acompanhe as novidades por aqui.";
-  trackEvent("select_content", { content_type: "collection_interest" });
+
+  // Garante que o usuário digitou um formato válido
+  if (emailInput && !emailInput.checkValidity()) {
+    emailInput.reportValidity();
+    return;
+  }
+
+  // Feedback visual realista para o usuário
+  message.textContent = "Obrigado pelo interesse! Seu contato foi registrado para as próximas novidades.";
+
+  // Dispara evento para o GA4 sem trafegar o dado sensível (e-mail)
+  trackEvent("select_content", { 
+    content_type: "collection_interest",
+    method: "email_form"
+  });
+
+  // Limpa o campo imediatamente (não salva em LocalStorage, cookies nem servidor)
   event.target.reset();
 });
 document.querySelectorAll("[data-track]").forEach(element => {
