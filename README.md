@@ -32,18 +32,6 @@ feito-a-mao/
         └── main.js
 ```
 
-## 🛠️ Como Testar Localmente
-
-1. Abra o arquivo `index.html` diretamente em seu navegador web.
-2. Para uma experiência completa de teste (recomendado para chamadas e scripts de analytics), abra a pasta no **Visual Studio Code** e inicie com a extensão **Live Server**, ou utilize um servidor local:
-
-```bash
-# Com Python 3
-python -m http.server 8000
-
-# Ou com Node.js
-npx serve .
-```
 
 ## 📊 Eventos Preparados (GA4)
 
